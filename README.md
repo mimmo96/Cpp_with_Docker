@@ -1,4 +1,4 @@
-# Cpp_with_Docker
+# C++ on Docker
 Tools for running Cpp applications on Docker with docker-compose and local volume
 
 
