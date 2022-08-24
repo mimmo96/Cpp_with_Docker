@@ -1,6 +1,6 @@
 ### version 1.1 (2022)
 FROM ubuntu
-MAINTAINER marcod
+
 ### install base programming tools
 RUN apt update && DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt -y install tzdata \
 	&& apt install -y git subversion \
@@ -44,10 +44,10 @@ RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 100 --slave /
 #RUN apt install -y gdb libjemalloc-dev
 #-------------------------
 ### fix user
-RUN useradd -ms /bin/bash spm2022user
-USER spm2022user
-WORKDIR /home/spm2022user
-RUN cd /home/spm2022user && mkdir Documents
+RUN useradd -ms /bin/bash user
+USER user
+WORKDIR /home/user
+RUN cd /home/user && mkdir Documents
 
 
 CMD ["/bin/bash"]
