@@ -2,13 +2,13 @@ version: '3.3'
 
 services:
 
-  spm:
+  cpp:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: "spm"
+    container_name: "cpp"
     volumes:
-      - ./data:/home/spm2022user/Documents/
+      - ./data:/home/user/Documents/
     
     stdin_open: true
     tty: true
