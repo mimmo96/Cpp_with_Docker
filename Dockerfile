@@ -44,10 +44,10 @@ RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 100 --slave /
 #RUN apt install -y gdb libjemalloc-dev
 #-------------------------
 ### fix user
-RUN useradd -ms /bin/bash user
-USER user
-WORKDIR /home/user
-RUN cd /home/user && mkdir Documents
+RUN useradd -ms /bin/bash my_user
+USER my_user
+WORKDIR /home/my_user
+RUN cd /home/my_user && mkdir Documents
 
 
 CMD ["/bin/bash"]
