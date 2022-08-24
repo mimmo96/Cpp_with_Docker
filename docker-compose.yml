@@ -8,7 +8,7 @@ services:
       dockerfile: Dockerfile
     container_name: "cpp"
     volumes:
-      - ./data:/home/user/Documents/
+      - ./data:/home/my_user/Documents/
     
     stdin_open: true
     tty: true
