@@ -1,0 +1,17 @@
+version: '3.3'
+
+services:
+
+  spm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "spm"
+    volumes:
+      - ./data:/home/spm2022user/Documents/
+    
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+  
+
