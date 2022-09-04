@@ -10,13 +10,6 @@ docker-compose build
 
 ### after the process has finish run:
 
-```bash
-docker-compose up
 ```
-
-### in another shell run:
-
-```bash
-docker run -it cpp bash
+docker run -it -v ./data:/home/my_user/Documents/ my_user bash
 ```
-
