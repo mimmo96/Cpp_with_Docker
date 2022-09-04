@@ -5,7 +5,7 @@ Tools for running Cpp applications on Docker with docker-compose and local volum
 ### how to run
 
 ```bash
-docker-compose build
+docker build -t my_user .
 ```
 
 ### after the process has finish run:
